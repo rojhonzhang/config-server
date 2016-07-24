@@ -11,7 +11,7 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
   redis:
-    host: 192.168.1.4
+    host: 139.129.203.216
     password:
     database: 1
     port: 6379
