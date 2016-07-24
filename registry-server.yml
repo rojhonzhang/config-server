@@ -6,7 +6,7 @@ server:
 # for server discovery
 eureka:
   instance:
-    hostname: localhost
+    hostname: 139.129.203.216
   client:
     registerWithEureka: false
     fetchRegistry: false

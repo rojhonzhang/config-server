@@ -4,12 +4,12 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.1.2:8002/registry-server/eureka/
+      defaultZone: http://139.129.203.216:8002/registry-server/eureka/
 spring:
   datasource:
-    url: jdbc:mysql://192.168.1.2:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://139.129.203.216:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     username: root
-    password: 123456
+    password: rootAdmin*1
     driver-class-name: com.mysql.jdbc.Driver
     # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
@@ -27,7 +27,7 @@ spring:
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
   redis:
-    host: 192.168.1.4
+    host: 139.129.203.216
     password:
     database: 1
     port: 6379
@@ -38,7 +38,7 @@ spring:
       min-idle: 0
       timeout: 0
 mybatis:
-  config-location: file:/Users/zhongjingquan/Documents/workspace/bitbucket/tsh_microservices/config-repo/mybatis-config.xml
+  config-location: file:/public/config-repo/mybatis-config.xml
 logging:
   level:
     root: info

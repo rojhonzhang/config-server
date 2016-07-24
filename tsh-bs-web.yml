@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.1.2:8002/registry-server/eureka/
+      defaultZone: http://139.129.203.216:8002/registry-server/eureka/
 spring:
   mvc:
     view:
