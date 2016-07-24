@@ -1,5 +1,5 @@
 server:
-  port: 8009
+  port: 8015
   contextPath: /mg-service
 eureka:
   client:
