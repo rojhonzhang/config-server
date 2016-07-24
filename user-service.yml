@@ -1,0 +1,36 @@
+server:
+  port: 8004
+  contextPath: /user-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.2:8002/registry-server/eureka/
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.2:3306/test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+mybatis:
+  config-location: file:/home/jackzhong/Documents/workspace/tsh_microservices/config-repo/mybatis-config.xml
+logging:
+  level:
+    root: info
+    com:
+      tsh:
+        microse: debug

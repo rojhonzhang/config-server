@@ -1,0 +1,19 @@
+server:
+  port: 8005
+  contextPath: /tsh-api
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.2:8002/registry-server/eureka/
+spring:
+  redis:
+    host: 192.168.1.4
+    password:
+    database: 1
+    port: 6379
+    pool:
+      max-active: 8
+      max-idle: 8
+      max-wait: -1
+      min-idle: 0
+      timeout: 0

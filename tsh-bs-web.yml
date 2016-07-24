@@ -1,0 +1,32 @@
+server:
+  port: 8006
+  contextPath: /tsh-bs
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.2:8002/registry-server/eureka/
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  redis:
+    host: 192.168.1.4
+    password:
+    database: 1
+    port: 6379
+    pool:
+      max-active: 8
+      max-idle: 8
+      max-wait: -1
+      min-idle: 0
+      timeout: 0
+  dubbo:
+    application:
+      name: annotation-provider
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 20880
+    scan: com.tsh.microse
