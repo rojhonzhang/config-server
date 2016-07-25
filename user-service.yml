@@ -27,7 +27,7 @@ spring:
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
 mybatis:
-  config-location: file:/public/config-repo/mybatis-config.xml
+  config-location: file:C:/config-repo/mybatis-config.xml
 logging:
   level:
     root: info
