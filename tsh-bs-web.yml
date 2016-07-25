@@ -11,7 +11,7 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
   redis:
-    host: 139.129.203.216
+    host: 192.168.1.230
     password:
     database: 1
     port: 6379
@@ -25,7 +25,7 @@ spring:
     application:
       name: annotation-provider
     registry:
-      address: zookeeper://127.0.0.1:2181
+      address: zookeeper://192.168.1.230:2181
     protocol:
       name: dubbo
       port: 20880
