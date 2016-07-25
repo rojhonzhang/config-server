@@ -7,7 +7,7 @@ eureka:
       defaultZone: http://192.168.1.230:8002/registry-server/eureka/
 spring:
   redis:
-    host: 192.168.1.230
+    host: 139.129.203.216
     password:
     database: 1
     port: 6379

@@ -27,7 +27,7 @@ spring:
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
   redis:
-    host: 192.168.1.230
+    host: 139.129.203.216
     password:
     database: 1
     port: 6379
